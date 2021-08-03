@@ -1,0 +1,64 @@
+{
+  "root": true,
+  "env": {
+    "node": true,
+    "browser": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/recommended-requiring-type-checking"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "plugins": [
+    "@typescript-eslint"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "sourceType": "module",
+    "project": ["./tsconfig.json"]
+  },
+  "rules": {
+    "no-console": [
+      "warn"
+    ],
+    "no-debugger": [
+      "warn"
+    ],
+    "linebreak-style": [
+      "error",
+      "windows"
+    ],
+    "indent": [
+      "error",
+      2,
+      {
+        "SwitchCase": 1
+      }
+    ],
+    "quotes": [
+      "error",
+      "single"
+    ],
+    "comma-dangle": [
+      "error",
+      "never"
+    ],
+    "array-bracket-spacing": [
+      "error",
+      "never",
+      {
+        "singleValue": false,
+        "objectsInArrays": false
+      }
+    ],
+    "space-before-function-paren": [
+      "error",
+      "never"
+    ],
+    "semi": [
+      "error",
+      "never"
+    ]
+  }
+}

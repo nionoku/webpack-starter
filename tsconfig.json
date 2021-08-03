@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "target": "esnext",
+    "module": "esnext",
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "allowJs": true,
+    "strict": true,
+    "allowSyntheticDefaultImports": true,
+    "strictPropertyInitialization": true,
+    "strictFunctionTypes": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ],
+      "#/*": [
+        "./*"
+      ]
+    }
+  },
+  "include": [
+    "config/**/*.js",
+    "**/*.ts",
+    "**/*.components.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
